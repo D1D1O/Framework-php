@@ -7,9 +7,11 @@ class HomeController extends BaseController
 {
 	public function index()
 	{
-		//$this->view->nome = "Giovanny Lima";
-		//$this->renderView('home/index');
-		$this->exibir();
+		$this->pagett(Home);
+		$this->view->nome = "Gay";
+		$this->renderView('home/index', 'layout');
+
+		
 		
 	}
 }

@@ -75,6 +75,8 @@ class Route
 				$controller = $route[1];
 				$action     = $route[2];
 				break;
+			}else{
+				$found = false;
 			}
 		}
 
@@ -103,7 +105,8 @@ class Route
 			}
 		}
 		else{
-			echo "rota nao existe";
+			
+			Container::pageNotFound();
 		}
 	} 
 
